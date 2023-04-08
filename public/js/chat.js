@@ -14,7 +14,7 @@ const locationTemplate = document.querySelector('#location-template').innerHTML
 const sidebarTemplate = document.querySelector('#sidebar-template').innerHTML
 
 // Options
-const { username, room } = Qs.parse(location.search, { ignoreQueryPrefix: true })
+const { username, room } = qs.parse(location.search, { ignoreQueryPrefix: true })
 
 
 const autoScroll = () => {
